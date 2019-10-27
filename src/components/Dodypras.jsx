@@ -17,7 +17,9 @@ const Dodypras = () => {
 	const cardStyle = {
 		padding: 20,
 		backgroundColor: '#fff',
-		border: '1px solid #000'
+		border: '1px solid #cbd5e0',
+		boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+		borderRadius: 4
 	};
 
 	const buttonStyle = {
