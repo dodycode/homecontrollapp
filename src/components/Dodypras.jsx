@@ -23,10 +23,11 @@ const Dodypras = () => {
 	};
 
 	const buttonStyle = {
-		backgroundColor: '#fff',
-		border: '1px solid #000',
-		padding: '10px 20px',
-		borderRadius: '8px',
+		backgroundColor: '#4299e1',
+		color: '#fff',
+		border: 0,
+		padding: '8px 16px',
+		borderRadius: 4,
 		cursor: 'pointer',
 		display: devName != null ? 'none' : 'inherit',
 		outline: 'none'
