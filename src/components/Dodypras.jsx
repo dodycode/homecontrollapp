@@ -33,21 +33,24 @@ const Dodypras = () => {
 		outline: 'none'
 	}
 
+	const linkStyle = {
+		color: '#4299e1',
+		textDecoration: 'none',
+		cursor: 'pointer'
+	}
+
 	function showDeveloper() {
-		setDevName('Username: Dodypras');
-		setDevFacebook('Facebook: facebook.com/DodyCoder');
-		setDevGithub('Github: https://github.com/dodycode');
+		setDevName('Dody Prasetyo');
+		setDevFacebook('https://facebook.com/DodyCoder');
+		setDevGithub('https://github.com/dodycode');
 	}
 
 	return(
 		<div style={containerStyle}>
 			<div style={cardStyle}>
 				<div style={{ display: devName == null ? 'none' : 'inherit'}}>
-					{devName}
-					<br />
-					{devFacebook}
-					<br />
-					{devGithub}
+					<p style={{marginTop: 0}} id="dev-name">{devName}</p>
+					<a id="facebook-link" href={devFacebook} style={linkStyle} target="_blank">Facebook</a> | <a id="github-link" href={devGithub} style={linkStyle} target="_blank">Github</a>
 				</div>
 				<button style={buttonStyle} onClick={showDeveloper}>Hey who's this?! <br /> <b>Click me!</b></button>
 			</div>
